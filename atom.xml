@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Blog</title>
+  <title>Wxh の Blog</title>
   
-  
+  <subtitle>欢迎来玩呀</subtitle>
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-25T03:22:01.286Z</updated>
+  <updated>2020-08-26T05:02:32.871Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试hexo admin</title>
+    <link href="http://yoursite.com/2020/08/26/%E6%B5%8B%E8%AF%95hexo-admin/"/>
+    <id>http://yoursite.com/2020/08/26/%E6%B5%8B%E8%AF%95hexo-admin/</id>
+    <published>2020-08-26T04:31:00.000Z</published>
+    <updated>2020-08-26T05:02:32.871Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>这是测试hexo admin插件的一篇文章</p></blockquote><h2 id="biaoti"><a href="#biaoti" class="headerlink" title="biaoti"></a>biaoti</h2><h6 id="系哦啊标题"><a href="#系哦啊标题" class="headerlink" title="系哦啊标题"></a>系哦啊标题</h6>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;这是测试hexo admin插件的一篇文章&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;biaoti&quot;&gt;&lt;a href=&quot;#biaoti&quot; class=&quot;headerlink&quot; title=&quot;biaoti&quot;&gt;&lt;/a&gt;biaoti&lt;/h2&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="文章" scheme="http://yoursite.com/tags/%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>first Blog</title>

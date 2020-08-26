@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>测试hexo admin</title>
+      <link href="/2020/08/26/%E6%B5%8B%E8%AF%95hexo-admin/"/>
+      <url>/2020/08/26/%E6%B5%8B%E8%AF%95hexo-admin/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>这是测试hexo admin插件的一篇文章</p></blockquote><h2 id="biaoti"><a href="#biaoti" class="headerlink" title="biaoti"></a>biaoti</h2><h6 id="系哦啊标题"><a href="#系哦啊标题" class="headerlink" title="系哦啊标题"></a>系哦啊标题</h6>]]></content>
+      
+      
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+            <tag> 文章 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>first Blog</title>
+      <link href="/2020/08/25/firstBlog/"/>
+      <url>/2020/08/25/firstBlog/</url>
+      
+        <content type="html"><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h5 id="标题-1"><a href="#标题-1" class="headerlink" title="标题"></a>标题</h5><blockquote><p>这是引用的使用，使用 &gt; 加空格</p></blockquote><p>写一个无需列表（减号加空格）</p><ul><li>无需</li><li>无需</li><li>无需</li><li>无需</li></ul><p>再写一个有序列表</p><ol><li>有序列表</li><li>有序</li><li>有序</li><li>有序</li></ol><p><img src= "/img/loading.gif" data-lazy-src="https://img.alicdn.com/imgextra/i4/479184430/TB2IPNMnrplpuFjSspiXXcdfFXa_!!479184430.jpg_300x1000Q50s50.jpg_.webp" alt="美女"></p><p><a href="www.baidu.com">baidu</a></p><p>*<em>加粗,使用两个</em> **<br><em>斜体，使用一个</em> *</p><p align="middle"><font face="宋体" color="blue" size="15">字体颜色字号要 用标签</fong></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2020/08/25/hello-world/"/>
+      <url>/2020/08/25/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
