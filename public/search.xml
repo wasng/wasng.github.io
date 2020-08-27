@@ -4,25 +4,25 @@
   
     
     <entry>
-      <title>测试hexo admin</title>
-      <link href="/2020/08/26/%E6%B5%8B%E8%AF%95hexo-admin/"/>
-      <url>/2020/08/26/%E6%B5%8B%E8%AF%95hexo-admin/</url>
+      <title>springboot简单入门程序</title>
+      <link href="/2020/08/27/pringboot%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8%E7%A8%8B%E5%BA%8F/"/>
+      <url>/2020/08/27/pringboot%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8%E7%A8%8B%E5%BA%8F/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>这是测试hexo admin插件的一篇文章</p></blockquote><h2 id="biaoti"><a href="#biaoti" class="headerlink" title="biaoti"></a>biaoti</h2><h6 id="系哦啊标题"><a href="#系哦啊标题" class="headerlink" title="系哦啊标题"></a>系哦啊标题</h6>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><ol><li>首先配置maven，找到maven目录下conf里面的settings.xml添加一些镜像</li><li>新建maven项目，在pom.xml文件中添加依赖，保存，然后会联网下载包<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--springboot 的版本仲裁中心  --&gt;</span><br><span class="line">&lt;parent&gt;</span><br><span class="line">&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;</span><br><span class="line">&lt;version&gt;2.0.1.RELEASE&lt;/version&gt;</span><br><span class="line">&lt;relativePath /&gt; &lt;!-- lookup parent from repository ，从仓库中寻找parent--&gt;</span><br><span class="line">&lt;/parent&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 启动器，Starter里面包含各种功能，要用那个就调用哪个 --&gt;</span><br><span class="line">&lt;dependencies&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure></li><li>新建主配置类</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorldMainApplication</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">SpringApplication.run(HelloWorldMainApplication.class,args);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><pre><code>注意：由于springbootApplication中有@EnableAutoConfiguration的@Import(AutoConfigurationImportSelector.class)方法，主要将主配置类（就是@SpringBootApplication修饰的类）所在包及下面所有子包里面的组件扫描到spring容器。</code></pre><p>这就要求我们把主配置类放到外面，否则容器会找不到controller注解之类的</p><ol start="4"><li>新建controller</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line"><span class="meta">@ResponseBody</span><span class="comment">//将方法的返回值以特定形式返回到body区域，一般是json</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/hello&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;hello world&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure><p>@ResponseBody和@Controller可以合并，用@RestController</p><p>5.运行配置类中的main方法<br>在浏览器中输入 localhost:8080/hello，页面会显示 hello world，则成功运行</p>]]></content>
       
       
       <categories>
           
-          <category> 测试 </category>
+          <category> SpringBoot </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 测试 </tag>
+            <tag> java </tag>
             
-            <tag> 文章 </tag>
+            <tag> springboot </tag>
             
         </tags>
       
@@ -31,26 +31,27 @@
     
     
     <entry>
-      <title>first Blog</title>
-      <link href="/2020/08/25/firstBlog/"/>
-      <url>/2020/08/25/firstBlog/</url>
+      <title>千年金融史</title>
+      <link href="/2020/08/27/%E5%8D%83%E5%B9%B4%E9%87%91%E8%9E%8D%E5%8F%B2/"/>
+      <url>/2020/08/27/%E5%8D%83%E5%B9%B4%E9%87%91%E8%9E%8D%E5%8F%B2/</url>
       
-        <content type="html"><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h5 id="标题-1"><a href="#标题-1" class="headerlink" title="标题"></a>标题</h5><blockquote><p>这是引用的使用，使用 &gt; 加空格</p></blockquote><p>写一个无需列表（减号加空格）</p><ul><li>无需</li><li>无需</li><li>无需</li><li>无需</li></ul><p>再写一个有序列表</p><ol><li>有序列表</li><li>有序</li><li>有序</li><li>有序</li></ol><p><img src= "/img/loading.gif" data-lazy-src="https://img.alicdn.com/imgextra/i4/479184430/TB2IPNMnrplpuFjSspiXXcdfFXa_!!479184430.jpg_300x1000Q50s50.jpg_.webp" alt="美女"></p><p><a href="www.baidu.com">baidu</a></p><p>*<em>加粗,使用两个</em> **<br><em>斜体，使用一个</em> *</p><p align="middle"><font face="宋体" color="blue" size="15">字体颜色字号要 用标签</fong></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2020/08/25/hello-world/"/>
-      <url>/2020/08/25/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p>&emsp;&emsp;大家好，今天我要为大家推荐的书是《千年金融史》，这是一本由耶鲁大学管理学院教授威廉戈斯曼教授撰写的介于畅销书和学术专著之间的读千年金融史。<br><br><img src= "/img/loading.gif" data-lazy-src="https://pic3.zhimg.com/v2-0933f29e081ff6195dad28703b6ea6f7.jpg" style="zoom:30%"><br>这个题目是中文版译者重新启动这本书的英文标题直译过来就是金钱改变一切金融如何成就文明？这也是我推荐这本书的第一个原因。金融的核心概念之一是信用而信用，或者说承诺也正是文明与野蛮的分页。阅读这本书，你会了解世界各地的人们如何从早期的金融活动中接纳承诺的概念，并且在此基础上发展出复杂的合同和金融工具。你还会了解这些金融工具如何推动文明的进程。我推荐这本书的第二个原因是你可以从这本书里读到很多前人在投资上犯过的错误。培根说，读史使人明智。我的理解是读史可以读到别人犯过的错误，从而再遇到相似的场景时，避免犯别人犯过的错误。现在市场上的投资方式五花八门，投资标的也鱼龙混杂，哪些投资产品容易爆雷，哪些平台有容易跑路？事实上，这些暴雷跑路的产品和历史上反复出现过的金融骗局以及投机工具有很多相似之处，甚至有相同的本质。千年金融史是一本大书，一共29章介绍了从五千年前到21世纪人类文明发展历程中与现代金融体系息息相关的概念和实践的发展，以及这些发展对文明进步的贡献。<br>除了介绍历史事实，千年金融史还是半部思想史。古往今来，世界各个主要文明产生的金融思想，他们的闪光之处和局限，你都能在这本书里找到这本书的作者戈兹曼教授是一个耶鲁人，他出生在耶鲁大学，坐落在美国纽黑文市，从小便与那些最好的学者韦林。他在耶</p>]]></content>
       
       
+      <categories>
+          
+          <category> 读书 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 读书 </tag>
+            
+            <tag> 金融 </tag>
+            
+        </tags>
       
     </entry>
     

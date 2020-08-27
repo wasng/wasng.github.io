@@ -2,73 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/about/index.html</loc>
+    <loc>http://yoursite.com/2020/08/27/%E5%8D%83%E5%B9%B4%E9%87%91%E8%9E%8D%E5%8F%B2/</loc>
     
-    <lastmod>2020-08-26</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/08/26/%E6%B5%8B%E8%AF%95hexo-admin/</loc>
-    
-    <lastmod>2020-08-26</lastmod>
+    <lastmod>2020-08-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://yoursite.com/2020/08/27/pringboot%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8%E7%A8%8B%E5%BA%8F/</loc>
     
-    <lastmod>2020-08-26</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
-    
-    <lastmod>2020-08-26</lastmod>
+    <lastmod>2020-08-27</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/link/index.html</loc>
     
-    <lastmod>2020-08-25</lastmod>
+    <lastmod>2020-08-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/08/25/firstBlog/</loc>
+    <loc>http://yoursite.com/music/index.html</loc>
     
-    <lastmod>2020-08-25</lastmod>
+    <lastmod>2020-08-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/08/25/hello-world/</loc>
+    <loc>http://yoursite.com/tags/index.html</loc>
     
-    <lastmod>2020-08-25</lastmod>
+    <lastmod>2020-08-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/archive/index.html</loc>
+    
+    <lastmod>2020-08-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2020-08-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2020-08-26</lastmod>
     
   </url>
   
 
   <url>
     <loc>http://yoursite.com/</loc>
-    <lastmod>2020-08-26</lastmod>
+    <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-08-26</lastmod>
+    <loc>http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6/</loc>
+    <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2020-08-26</lastmod>
+    <loc>http://yoursite.com/tags/%E9%87%91%E8%9E%8D/</loc>
+    <lastmod>2020-08-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/java/</loc>
+    <lastmod>2020-08-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/springboot/</loc>
+    <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -76,8 +97,15 @@
 
   
   <url>
-    <loc>http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-08-26</lastmod>
+    <loc>http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/</loc>
+    <lastmod>2020-08-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/SpringBoot/</loc>
+    <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
